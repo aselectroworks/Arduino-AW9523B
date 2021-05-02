@@ -54,7 +54,7 @@ class AW9523B
 {
 public: 
     AW9523B(void); 
-#ifdef ESP32 || ESP8266
+#if defined(ESP32) || defined(ESP8266)
     AW9523B(int8_t sda, int8_t scl, int8_t ad0, int8_t ad1); 
 #endif
     virtual ~AW9523B(); 

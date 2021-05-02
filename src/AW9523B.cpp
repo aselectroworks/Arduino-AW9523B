@@ -7,7 +7,7 @@ AW9523B::AW9523B() {
 #endif
     DEBUG_PRINTLN("Call Contructor");
 }
-#ifdef ESP32 || ESP8266
+#if defined(ESP32) || defined(ESP8266)
 AW9523B::AW9523B(int8_t sda, int8_t scl, int8_t ad0, int8_t ad1) 
 : sda(sda), scl(scl), ad0(ad0), ad1(ad1) {
 #ifdef AW9523B_DEBUG
